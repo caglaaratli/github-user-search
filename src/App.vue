@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <AppHeader :colorMode="colorMode" @colorModeChanged="updateColorMode"  />
+    <SearchUser :colorMode="colorMode"  ></SearchUser> 
+  </div>
+    
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from "@/components/AppHeader.vue"
+import SearchUser from "./components/SearchUser.vue"
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    AppHeader : AppHeader,
+    SearchUser : SearchUser
+  },
+  data() {
+    return {
+      colorMode: "light",
+    };
+  },
+  methods: {
+    updateColorMode(newColorMode) {
+      this.colorMode = newColorMode;
+    },
+  },
+  
+ }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
