@@ -4,7 +4,7 @@
             <div class="mainImg" :class="darkMode ? 'dark' : 'light'" ><img :src="githubUser.avatar_url" alt="GitHub User Profile" /></div>
             <div class="githubInfo">
                 <div class="githubUserInfo" :class="darkMode ? 'dark' : 'light'" >{{githubUser.name}}</div>
-                <div class="githubUserName" :class="darkMode ? 'dark' : 'light'"><a :href="githubUser.html_url">@{{ githubUser.login}}</a></div>
+                <div class="githubUserName" :class="darkMode ? 'dark' : 'light'"><a :href="githubUser.html_url" target="blank_">@{{ githubUser.login}}</a></div>
                 <div class="githubJoinedDate" :class="darkMode ? 'dark' : 'light'">Joined {{ githubUser.created_at.slice(0,githubUser.created_at.length-10) }}</div>
              </div>
             
