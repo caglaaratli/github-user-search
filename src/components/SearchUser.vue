@@ -106,7 +106,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:var(--search-color) ;
+  color:var(--search-btn-text-color) ;
   font-size:16px;
   margin-right:16px;
   cursor: pointer;

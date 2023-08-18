@@ -8,6 +8,7 @@
   --black: black;
   --follow-color: #4b6a9b;
   --followTotal-color: #2b3442;
+  --search-btn-text-color:#ffffff;
   } 
   
   /* Dark Mode Renkleri */
@@ -22,4 +23,5 @@
     --follow-color: white;
     --followTotal-color: #ffffff;
     --social-color: white;
+    --search-btn-text-color:#ffffff;
   }

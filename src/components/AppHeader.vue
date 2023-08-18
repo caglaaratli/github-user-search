@@ -6,11 +6,6 @@
           {{ darkMode ? 'LIGHT' : 'DARK' }}
          <img  width="20" height="20" :src="darkMode ? require('@/assets/icon-sun.svg') : require('@/assets/icon-moon.svg')">
         </button>
-        <!-- <button class="color-mode__btn dark--hidden" aria-label="Toggle dark mode">
-         DARK
-         <img  width="22" height="22" src="@/assets/icon-moon.svg">
-        </button> -->
-
       </div> 
   </div>
 
