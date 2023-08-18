@@ -7,10 +7,11 @@
               class="input-field" :class="darkMode ? 'dark' : 'light'"
               type="text"
               placeholder="Enter here GitHub user name ... "
+              @keydown.enter="searchUsers()"
           />
         </div>
         
-        <button class="btn-search" :class="darkMode ? 'dark' : 'light'" @click="searchUsers()">Search</button>
+        <button class="btn-search" :class="darkMode ? 'dark' : 'light'"  @click="searchUsers()">Search</button>
        
       </div>
 
